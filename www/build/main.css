@@ -33564,6 +33564,10 @@ page-account ion-content .banner {
   position: relative;
 }
 
+page-account ion-content .banner img {
+  width: 100%;
+}
+
 page-account ion-content .banner .caption {
   position: absolute;
   width: 100%;
@@ -34744,6 +34748,11 @@ page-welcome ion-header ion-toolbar ion-title {
   --color: white;
   font-size: 18px;
   text-align: center;
+}
+
+page-welcome ion-header ion-toolbar .rightbuttom {
+  position: absolute !important;
+  right: 10px !important;
 }
 
 page-welcome ion-header .set {

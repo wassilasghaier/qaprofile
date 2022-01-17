@@ -177,15 +177,15 @@ var map = {
 		331
 	],
 	"../pages/anglebead/anglebead.module": [
-		730,
+		732,
 		46
 	],
 	"../pages/arcroof/arcroof.module": [
-		731,
+		730,
 		45
 	],
 	"../pages/cards/cards.module": [
-		732,
+		731,
 		44
 	],
 	"../pages/cart/cart.module": [
@@ -209,11 +209,11 @@ var map = {
 		39
 	],
 	"../pages/galleryalum/galleryalum.module": [
-		738,
+		739,
 		38
 	],
 	"../pages/gypsum/gypsum.module": [
-		739,
+		738,
 		37
 	],
 	"../pages/indooralum/indooralum.module": [
@@ -221,15 +221,15 @@ var map = {
 		36
 	],
 	"../pages/item-create/item-create.module": [
-		741,
+		743,
 		35
 	],
 	"../pages/item-detail/item-detail.module": [
-		742,
+		741,
 		34
 	],
 	"../pages/jointpanel/jointpanel.module": [
-		743,
+		742,
 		33
 	],
 	"../pages/jtrim/jtrim.module": [
@@ -237,11 +237,11 @@ var map = {
 		32
 	],
 	"../pages/lightgaugesteel/lightgaugesteel.module": [
-		745,
+		746,
 		31
 	],
 	"../pages/lintel/lintel.module": [
-		746,
+		745,
 		30
 	],
 	"../pages/list-master/list-master.module": [
@@ -252,11 +252,11 @@ var map = {
 		29
 	],
 	"../pages/mainchannel/mainchannel.module": [
-		748,
+		749,
 		28
 	],
 	"../pages/menu/menu.module": [
-		749,
+		748,
 		27
 	],
 	"../pages/message/message.module": [
@@ -264,15 +264,15 @@ var map = {
 		26
 	],
 	"../pages/myorder/myorder.module": [
-		751,
+		752,
 		25
 	],
 	"../pages/panelstrip/panelstrip.module": [
-		753,
+		751,
 		24
 	],
 	"../pages/perimeter/perimeter.module": [
-		752,
+		753,
 		23
 	],
 	"../pages/perimeterangle/perimeterangle.module": [
@@ -284,15 +284,15 @@ var map = {
 		21
 	],
 	"../pages/qapcarrier/qapcarrier.module": [
-		756,
+		758,
 		20
 	],
 	"../pages/qaponetwo/qaponetwo.module": [
-		757,
+		756,
 		19
 	],
 	"../pages/qapstrips/qapstrips.module": [
-		758,
+		757,
 		18
 	],
 	"../pages/quality/quality.module": [
@@ -304,11 +304,11 @@ var map = {
 		16
 	],
 	"../pages/resetpwd/resetpwd.module": [
-		761,
+		762,
 		15
 	],
 	"../pages/ridgecap/ridgecap.module": [
-		762,
+		761,
 		14
 	],
 	"../pages/roofpanels/roofpanels.module": [
@@ -331,11 +331,11 @@ var map = {
 		10
 	],
 	"../pages/signup/signup.module": [
-		767,
+		771,
 		9
 	],
 	"../pages/slitting/slitting.module": [
-		768,
+		767,
 		8
 	],
 	"../pages/stripsjoint/stripsjoint.module": [
@@ -343,14 +343,14 @@ var map = {
 		7
 	],
 	"../pages/studles/studles.module": [
-		770,
+		768,
 		6
 	],
 	"../pages/tabs/tabs.module": [
 		346
 	],
 	"../pages/tbar/tbar.module": [
-		771,
+		770,
 		5
 	],
 	"../pages/tutorial/tutorial.module": [
@@ -361,11 +361,11 @@ var map = {
 		4
 	],
 	"../pages/vedioqaprofil/vedioqaprofil.module": [
-		773,
+		774,
 		3
 	],
 	"../pages/vsection/vsection.module": [
-		774,
+		773,
 		2
 	],
 	"../pages/watergater/watergater.module": [
@@ -1310,7 +1310,7 @@ var WelcomePage = /** @class */ (function () {
     ], WelcomePage.prototype, "slides", void 0);
     WelcomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-welcome',template:/*ion-inline-start:"/Users/solidwall/Desktop/qaprofilnew/src/pages/welcome/welcome.html"*/'<ion-header no-border>\n  <ion-toolbar color="primary" no-border>\n    <div class="row">\n    <button ion-button clear left>\n      <button ion-button clear menuToggle>\n        <img src="../assets/img/menu.svg" />\n      </button>\n    </button>\n\n    <ion-title>\n      Qaprofil\n    </ion-title>\n\n    <button ion-button clear right>\n      <button ion-button clear (click)="cart()">\n        <ion-icon class="set" ios="ios-cart" md="md-cart"></ion-icon>\n      </button>\n    </button>\n  </div>\n  </ion-toolbar>\n  \n</ion-header>\n\n<ion-content [fullscreen]="true" class="back">\n  <div class="banner">\n    <img src="../assets/img/banner.svg" />\n\n    <div class="caption ion-padding">\n      Discover our large<br>\n      set of products\n    </div>\n\n    <div class="search" (click)="goToSecond(\'about\')">\n      \n      \n        <h2 class="left"> About</h2>\n    </div>\n  </div>\n\n  <div class="title">\n    <h2>Products</h2>\n\n    \n  </div>\n\n  <div class="event-slider">\n    <ion-slides  class="default-left-padding" #slides>\n      <ion-slide *ngFor="let p of products" (click)="goToSecond(p.component)">\n        <ion-col class="ion-text-left">\n          <ion-card>\n            <ion-card-header no-padding>\n              <img src="{{p.image}}" />\n            </ion-card-header>\n\n            <ion-card-content class="back">\n              \n              <h2 class="eventname">{{p.title}}</h2>\n             \n\n             \n            </ion-card-content>\n          </ion-card>\n        </ion-col>\n      </ion-slide>\n     \n    </ion-slides>\n  </div>\n\n  <div class="default-top-padding title">\n    <h2>Youtube Videos</h2>\n  </div>\n\n  <div class="live-event">\n    <img src="../assets/events/ev3.png" />\n\n    <div class="info">\n      <div class="content">\n        <h6>Youtube Video</h6>\n\n        <p class="stats">\n          <span><ion-icon name="eye"></ion-icon>&nbsp;2.3K</span><span><ion-icon name="heart"></ion-icon>&nbsp;3758</span>\n        </p>\n\n        <p class="location"><ion-icon name=\'location\'></ion-icon>Middle east, Qatar</p>\n\n      </div>\n\n      <div class="indicator" (click)="goToSecond(\'Youtube Video\')">\n        <div>watch</div>\n      </div>\n    </div>\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/solidwall/Desktop/qaprofilnew/src/pages/welcome/welcome.html"*/
+            selector: 'page-welcome',template:/*ion-inline-start:"/Users/solidwall/Desktop/qaprofilnew/src/pages/welcome/welcome.html"*/'<ion-header no-border>\n  <ion-toolbar color="primary" no-border>\n  <div class="row">\n    <button ion-button clear left>\n      <button ion-button clear menuToggle>\n        <img src="../assets/img/menu.svg" />\n      </button>\n    </button>\n\n    <ion-title>\n      Qaprofil\n    </ion-title>\n\n    <button ion-button clear right class="rightbuttom">\n      <button ion-button clear (click)="cart()">\n        <ion-icon class="set" ios="ios-cart" md="md-cart"></ion-icon>\n      </button>\n    </button>\n  </div>\n  </ion-toolbar>\n  \n</ion-header>\n\n<ion-content [fullscreen]="true" class="back">\n  <div class="banner">\n    <img src="../assets/img/banner.svg" />\n\n    <div class="caption ion-padding">\n      Discover our large<br>\n      set of products\n    </div>\n\n    <div class="search" (click)="goToSecond(\'about\')">\n      \n      \n        <h2 class="left"> About</h2>\n    </div>\n  </div>\n\n  <div class="title">\n    <h2>Products</h2>\n\n    \n  </div>\n\n  <div class="event-slider">\n    <ion-slides  class="default-left-padding" #slides>\n      <ion-slide *ngFor="let p of products" (click)="goToSecond(p.component)">\n        <ion-col class="ion-text-left">\n          <ion-card>\n            <ion-card-header no-padding>\n              <img src="{{p.image}}" />\n            </ion-card-header>\n\n            <ion-card-content class="back">\n              \n              <h2 class="eventname">{{p.title}}</h2>\n             \n\n             \n            </ion-card-content>\n          </ion-card>\n        </ion-col>\n      </ion-slide>\n     \n    </ion-slides>\n  </div>\n\n  <div class="default-top-padding title">\n    <h2>Youtube Videos</h2>\n  </div>\n\n  <div class="live-event">\n    <img src="../assets/events/ev3.png" />\n\n    <div class="info">\n      <div class="content">\n        <h6>Youtube Video</h6>\n\n        <p class="stats">\n          <span><ion-icon name="eye"></ion-icon>&nbsp;2.3K</span><span><ion-icon name="heart"></ion-icon>&nbsp;3758</span>\n        </p>\n\n        <p class="location"><ion-icon name=\'location\'></ion-icon>Middle east, Qatar</p>\n\n      </div>\n\n      <div class="indicator" (click)="goToSecond(\'Youtube Video\')">\n        <div>watch</div>\n      </div>\n    </div>\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/solidwall/Desktop/qaprofilnew/src/pages/welcome/welcome.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */],
@@ -1638,55 +1638,55 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/account/account.module#AccountPageModule', name: 'AccountPage', segment: 'account', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/anglebead/anglebead.module#AnglebeadPageModule', name: 'AnglebeadPage', segment: 'anglebead', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/arcroof/arcroof.module#ArcroofPageModule', name: 'ArcroofPage', segment: 'arcroof', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/anglebead/anglebead.module#AnglebeadPageModule', name: 'AnglebeadPage', segment: 'anglebead', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cart/cart.module#CartPageModule', name: 'CartPage', segment: 'cart', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/downspout/downspout.module#DownspoutPageModule', name: 'DownspoutPage', segment: 'downspout', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/exit/exit.module#ExitPageModule', name: 'ExitPage', segment: 'exit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/furring-channel/furring-channel.module#FurringChannelPageModule', name: 'FurringChannelPage', segment: 'furring-channel', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/galleryalum/galleryalum.module#GalleryalumPageModule', name: 'GalleryalumPage', segment: 'galleryalum', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/gypsum/gypsum.module#GypsumPageModule', name: 'GypsumPage', segment: 'gypsum', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/galleryalum/galleryalum.module#GalleryalumPageModule', name: 'GalleryalumPage', segment: 'galleryalum', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/indooralum/indooralum.module#IndooralumPageModule', name: 'IndooralumPage', segment: 'indooralum', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/item-create/item-create.module#ItemCreatePageModule', name: 'ItemCreatePage', segment: 'item-create', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/item-detail/item-detail.module#ItemDetailPageModule', name: 'ItemDetailPage', segment: 'item-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/jointpanel/jointpanel.module#JointpanelPageModule', name: 'JointpanelPage', segment: 'jointpanel', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/item-create/item-create.module#ItemCreatePageModule', name: 'ItemCreatePage', segment: 'item-create', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/jtrim/jtrim.module#JtrimPageModule', name: 'JtrimPage', segment: 'jtrim', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/lightgaugesteel/lightgaugesteel.module#LightgaugesteelPageModule', name: 'LightgaugesteelPage', segment: 'lightgaugesteel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/lintel/lintel.module#LintelPageModule', name: 'LintelPage', segment: 'lintel', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/lightgaugesteel/lightgaugesteel.module#LightgaugesteelPageModule', name: 'LightgaugesteelPage', segment: 'lightgaugesteel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/list-master/list-master.module#ListMasterPageModule', name: 'ListMasterPage', segment: 'list-master', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/mainchannel/mainchannel.module#MainchannelPageModule', name: 'MainchannelPage', segment: 'mainchannel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/mainchannel/mainchannel.module#MainchannelPageModule', name: 'MainchannelPage', segment: 'mainchannel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/message/message.module#MessagePageModule', name: 'MessagePage', segment: 'message', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/panelstrip/panelstrip.module#PanelstripPageModule', name: 'PanelstripPage', segment: 'panelstrip', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/myorder/myorder.module#MyorderPageModule', name: 'MyorderPage', segment: 'myorder', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/perimeter/perimeter.module#PerimeterPageModule', name: 'PerimeterPage', segment: 'perimeter', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/panelstrip/panelstrip.module#PanelstripPageModule', name: 'PanelstripPage', segment: 'panelstrip', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/perimeterangle/perimeterangle.module#PerimeteranglePageModule', name: 'PerimeteranglePage', segment: 'perimeterangle', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/qapcarrier/qapcarrier.module#QapcarrierPageModule', name: 'QapcarrierPage', segment: 'qapcarrier', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/qaponetwo/qaponetwo.module#QaponetwoPageModule', name: 'QaponetwoPage', segment: 'qaponetwo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/qapstrips/qapstrips.module#QapstripsPageModule', name: 'QapstripsPage', segment: 'qapstrips', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/qapcarrier/qapcarrier.module#QapcarrierPageModule', name: 'QapcarrierPage', segment: 'qapcarrier', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/quality/quality.module#QualityPageModule', name: 'QualityPage', segment: 'quality', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/resetpwd/resetpwd.module#ResetpwdPageModule', name: 'ResetpwdPage', segment: 'resetpwd', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ridgecap/ridgecap.module#RidgecapPageModule', name: 'RidgecapPage', segment: 'ridgecap', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/resetpwd/resetpwd.module#ResetpwdPageModule', name: 'ResetpwdPage', segment: 'resetpwd', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/roofpanels/roofpanels.module#RoofpanelsPageModule', name: 'RoofpanelsPage', segment: 'roofpanels', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/roofsheet/roofsheet.module#RoofsheetPageModule', name: 'RoofsheetPage', segment: 'roofsheet', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/runner/runner.module#RunnerPageModule', name: 'RunnerPage', segment: 'runner', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/semiround/semiround.module#SemiroundPageModule', name: 'SemiroundPage', segment: 'semiround', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/slitting/slitting.module#SlittingPageModule', name: 'SlittingPage', segment: 'slitting', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/stripsjoint/stripsjoint.module#StripsjointPageModule', name: 'StripsjointPage', segment: 'stripsjoint', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/studles/studles.module#StudlesPageModule', name: 'StudlesPage', segment: 'studles', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/stripsjoint/stripsjoint.module#StripsjointPageModule', name: 'StripsjointPage', segment: 'stripsjoint', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tbar/tbar.module#TbarPageModule', name: 'TbarPage', segment: 'tbar', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tutorial/tutorial.module#TutorialPageModule', name: 'TutorialPage', segment: 'tutorial', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/uchannel/uchannel.module#UchannelPageModule', name: 'UchannelPage', segment: 'uchannel', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/vedioqaprofil/vedioqaprofil.module#VedioqaprofilPageModule', name: 'VedioqaprofilPage', segment: 'vedioqaprofil', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/vsection/vsection.module#VsectionPageModule', name: 'VsectionPage', segment: 'vsection', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/vedioqaprofil/vedioqaprofil.module#VedioqaprofilPageModule', name: 'VedioqaprofilPage', segment: 'vedioqaprofil', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/watergater/watergater.module#WatergaterPageModule', name: 'WatergaterPage', segment: 'watergater', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/waveroof/waveroof.module#WaveroofPageModule', name: 'WaveroofPage', segment: 'waveroof', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
